@@ -19,10 +19,19 @@ body {
     font-size: 16px;
     line-height: 1.7;
     color: #777;
+    padding: 25px;
 }
 
 .header {
     height: 95vh;
-    background-image: url(../img/hero.jpg);
+    background-image: 
+        linear-gradient(
+            to right bottom,
+            rgba(96, 194, 79, 0.80), 
+            rgba(40, 180, 133, 0.80)),
+        url(../img/hero.jpg);
     background-size: cover;
+    background-position: top;
+
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%)
 }
